@@ -1,6 +1,7 @@
 package automationPractice.Utils;
 
 import automationPractice.Pages.BasePage;
+import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,4 +14,8 @@ public class Utils extends BasePage {
     public static String getPageTitle() {
         return driver.getTitle();
     }
+
+    public static boolean isDisplayed(WebElement element) {return element.isDisplayed();}
+
+
 }
